@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  /* background: #fafafa; */
+}
+
+/* Common  */
+a {
+  text-decoration: none;
+}
+
+.main {
+  display: flex;
+  width: 1440px;
+  max-width: calc(100% - 48px);
+}
+
+/* Sidebar */
+.sidebar {
+  background: #fff;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  width: 252px;
+  height: 100vh;
+  padding: 32px;
+  border-right: 1px solid #f5f5f7;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo__title {
+  color: #141522;
+  font-size: 3.2rem;
+  font-weight: 600;
+  line-height: 1.5; /* 48px */
+  letter-spacing: -0.96px;
+}
+
+.menu-items {
+  margin-top: 60px;
+}
+
+.menu-items li {
+  display: flex;
+  align-items: center; /* Căn giữa icon và text theo chiều ngang */
+  gap: 12px; /* Khoảng cách giữa icon và link */
+  padding: 10px 20px; /* Khoảng cách nội dung */
+  width: 100%; /* Chiếm toàn bộ chiều ngang */
+  transition: 0.4s;
+}
+
+.menu-items li:nth-child(n + 2) {
+  margin-top: 24px;
+}
+
+.menu-items li:hover {
+  cursor: pointer;
+  border-radius: 10px;
+  background: #f5f5f7;
+}
+
+.menu__link {
+  display: inline-block;
+  color: #8e92bc;
+  /* Semibold/Type@14 */
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1.5; /* 21px */
+  letter-spacing: -0.28px;
+}
+
+.menu__link--active {
+  color: #141522;
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1.5; /* 21px */
+  letter-spacing: -0.28px;
+}
